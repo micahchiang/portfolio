@@ -1,0 +1,146 @@
+
+.app-container {
+    width: 100%;
+    background-color: #a0c5c4;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    height: 100%;
+    max-height: 500px;
+    flex-grow: 0.5;
+}
+
+.bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bio__details {
+    background-color: #ffffff;
+    font-size: 2em;
+    padding: 1em;
+}
+
+.bio__details-img {
+    width: 500px;
+    height: auto;
+    padding: 1em;
+}
+
+.bio__details-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 2em;
+}
+
+.bio__title {
+    color: #ffffff;
+}
+
+.current__work {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.current__work-details {
+    background-color: #ffffff;
+    font-size: 1em;
+}
+
+.current__work-title {
+    color: #ffffff;
+}
+
+.technologies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.technologies-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.technologies-details {
+    width: 25%;
+    height: 25%;
+    min-width: 1em;
+    min-height: 1em;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.technologies-one {
+    background: url('./assets/img/html.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.technologies-two {
+    background: url('./assets/img/css.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.technologies-three {
+    background: url('./assets/img/angular.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.technologies-four {
+    background: url('./assets/img/ts.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.technologies-five {
+    background: url('./assets/img/docker_vertical_large.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.technologies-six {
+    background: url('./assets/img/nodejs.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.technologies-seven {
+    background: url('./assets/img/icon_mongodb_by_xkneo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.technologies-eight {
+    background: url('./assets/img/Ansible_Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.technologies-title {
+    background-color: #ffffff;
+}
