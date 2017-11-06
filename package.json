@@ -1,0 +1,20 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micahchiang/portfolio.git"
+  },
+  "author": "Micah Chiang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micahchiang/portfolio/issues"
+  },
+  "homepage": "https://github.com/micahchiang/portfolio#readme",
+  "dependencies": {
+    "material-components-web": "^0.24.0",
+    "normalize.css": "^7.0.0"
+  }
+}

@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Micah Chiang</title>
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <main class="app-container">
-    <section class="bio">
+    <i id="navLeft" class="material-icons arrow__left-next">keyboard_arrow_left</i>
+    <section class="bio section__slide">
         <article class="bio__details flex-item">
             <img class="bio__details-img" src="./assets/img/mc_biopic.jpg">
             <ul class="bio__details-list">
@@ -23,33 +26,8 @@
             <p>I AM</p>
         </aside>
     </section>
-    <section class="current__work">
-        <aside class="current__work-title flex-item">
-            <p>I CURRENTLY</p>
-        </aside>
-        <article class="current__work-details flex-item">
-            <p>Am helping 100 million renters add rent payments to their credit report as a positive trade line.</p>
-        </article>
-    </section>
-    <section class="technologies">
-        <aside class="technologies-title flex-item">
-            <p>I USE</p>
-        </aside>
-        <article class="technologies-container flex-item">
-            <section class="flex-row">
-                <div class="technologies-details technologies-one"></div>
-                <div class="technologies-details technologies-two"></div>
-                <div class="technologies-details technologies-three"></div>
-                <div class="technologies-details technologies-four"></div>
-            </section>
-            <section class="flex-row">
-                <div class="technologies-details technologies-five"></div>
-                <div class="technologies-details technologies-six"></div>
-                <div class="technologies-details technologies-seven"></div>
-                <div class="technologies-details technologies-eight"></div>
-            </section>
-        </article>
-    </section>
+    <i id="navRight" class="material-icons arrow__right-next">keyboard_arrow_right</i>
 </main>
 </body>
+<script type="text/javascript" src="index.js"></script>
 </html>
