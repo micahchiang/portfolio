@@ -1,161 +1,165 @@
 
-.app-container {
-    width: 100%;
-    background-color: #a0c5c4;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+@font-face {
+    font-family: Optima;
+    src: url('./assets/fonts/optima/optima.woff');
 }
 
-.flex-item {
+.app-container {
+    width: 100%;
+    background: #74ebd5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-family: helvetica;
+    color: #ffffff;
+}
+.section-block {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.article-block {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    height: 75%;
+    width: 30%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+.article-block-content {
+    line-height: 1.5em;
+}
+.project__link {
+    color: royalblue;
+    text-decoration: none;
+}
+.nav__down {
+    position: fixed;
+    bottom: 5px;
     font-size: 5em;
-    height: 100%;
-    max-height: 500px;
-    flex-grow: 0.5;
+    cursor: pointer;
 }
 
 .bio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 90%;
+    background: #74ebd5;
+    background: -webkit-linear-gradient(top left,#74ebd5,#9face6);
+    background: -moz-linear-gradient(top left,#74ebd5,#9face6);
+    background: linear-gradient(top left,#74ebd5,#9face6);
 }
+.bio__header {
 
-.bio__details {
-    background-color: #ffffff;
-    font-size: 2em;
-    padding: 1em;
 }
-
-.bio__details-img {
-    width: 500px;
-    height: auto;
-    padding: 1em;
+.bio__header-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('./assets/img/mc_biopic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
 }
+.bio__header-title {
 
-.bio__details-list {
-    margin: 0;
-    padding: 0;
+}
+.bio__content {
+
+}
+.bio__content-details {
     list-style: none;
     line-height: 2em;
 }
 
-.bio__title {
-    color: #ffffff;
-}
 
 .current__work {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #ff9d6c;
+    background: -webkit-linear-gradient(left,#ff9d6c,#bb4e75);
+    background: -moz-linear-gradient(left,#ff9d6c,#bb4e75);
+    background: linear-gradient(left,#ff9d6c,#bb4e75);
 }
-
-.current__work-details {
-    background-color: #ffffff;
-    font-size: 1em;
-}
-
 .current__work-title {
+    position: absolute;
+    top: 1em;
+    margin: 0;
+    font-size: 2em;
+    font-weight: 100;
+}
+.rr__header-img {
+    background-image: url('./assets/img/rentreporters_logo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20%;
+    width: 75%;
+}
+.desktoptoys__header-img {
+    background-image: url('./assets/img/DT-logo-responsive.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(250,250,250, 0.3);
+    height: 20%;
+    width: 75%;
+}
+.alduino__header {
+    font-family: Optima;
+    background-color: #000000;
     color: #ffffff;
+    height: 20%;
+    width: 75%;
+    font-size: 2em;
+    text-align: center;
 }
 
 .technologies {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-wrap: wrap;
+    background: #dd8d8d;
+    background: -webkit-linear-gradient(top left,#dd8d8d,#4a6c87);
+    background: -moz-linear-gradient(top left,#dd8d8d,#4a6c87);
+    background: linear-gradient(top left,#dd8d8d,#4a6c87);
 }
-
-.technologies-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.technologies-details {
-    width: 25%;
-    height: 25%;
-    min-width: 1em;
-    min-height: 1em;
-}
-
-.flex-row {
-    display: flex;
-}
-
-.technologies-one {
-    background: url('./assets/img/html.png');
+.technology-block {
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 5px;
     background-size: contain;
-    background-repeat: no-repeat;
     background-position: center;
-}
-
-.technologies-two {
-    background: url('./assets/img/css.png');
-    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
 }
 
-.technologies-three {
-    background: url('./assets/img/angular.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.technology-one {
+    background-image: url('./assets/img/angular.png');
+}
+.technology-two {
+    background-image: url('./assets/img/ts.png');
+}
+.technology-three {
+    background-image: url('./assets/img/html.png');
+}
+.technology-four {
+    background-image: url('./assets/img/css.png');
+}
+.technology-five {
+    background-image: url('./assets/img/nodejs.png');
+}
+.technology-six {
+    background-image: url('./assets/img/icon_mongodb_by_xkneo.png');
+}
+.technology-seven {
+    background-image: url('./assets/img/Ansible_Logo.png');
+}
+.technology-eight {
+    background-image: url('./assets/img/docker_vertical_large.png');
 }
 
-.technologies-four {
-    background: url('./assets/img/ts.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
-.technologies-five {
-    background: url('./assets/img/docker_vertical_large.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.technologies-six {
-    background: url('./assets/img/nodejs.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.technologies-seven {
-    background: url('./assets/img/icon_mongodb_by_xkneo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.technologies-eight {
-    background: url('./assets/img/Ansible_Logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.technologies-title {
-    background-color: #ffffff;
-}
-
-.arrow__right-next {
-    font-size: 5em;
-}
-
-.arrow__left-next {
-    font-size: 5em;
-}
-
-.section__slide {
-    transition: all .5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
