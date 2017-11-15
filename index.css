@@ -175,7 +175,7 @@
     background-image: url('./assets/img/docker_vertical_large.png');
 }
 
-@media screen and (max-device-width: 1024px) and (orientation: portrait) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
     .article-block {
         border: 1px solid #ffffff;
         border-radius: 5px;
@@ -189,6 +189,7 @@
     }
     .current__work {
         flex-direction: column;
+        height: 135vh;
     }
     .desktoptoys__header-img {
         margin-right: 40px;
