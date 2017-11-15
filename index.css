@@ -74,6 +74,7 @@
 .bio__content-details {
     list-style: none;
     line-height: 2em;
+    font-size: 1.5em;
 }
 
 
@@ -121,11 +122,23 @@
 }
 
 .technologies {
+    position: relative;
     flex-wrap: wrap;
     background: #dd8d8d;
     background: -webkit-linear-gradient(top left,#dd8d8d,#4a6c87);
     background: -moz-linear-gradient(top left,#dd8d8d,#4a6c87);
     background: linear-gradient(top left,#dd8d8d,#4a6c87);
+}
+.technology__title {
+    font-size: 2em;
+}
+.technologies__container {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    max-width: 400px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .technology-block {
     width: 150px;
@@ -160,6 +173,29 @@
 }
 .technology-eight {
     background-image: url('./assets/img/docker_vertical_large.png');
+}
+
+@media screen and (max-device-width: 1024px) and (orientation: portrait) {
+    .article-block {
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        height: 30%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1em;
+        max-width: none !important;
+    }
+    .current__work {
+        flex-direction: column;
+    }
+    .desktoptoys__header-img {
+        margin-right: 40px;
+    }
+    .alduino__header {
+        margin-right: 40px;
+    }
 }
 
 
