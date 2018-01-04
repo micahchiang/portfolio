@@ -2,10 +2,8 @@
   "name": "personal-website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/micahchiang/portfolio.git"
+    "type": "git"
   },
   "author": "Micah Chiang",
   "license": "ISC",

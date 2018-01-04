@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Micah Chiang</title>
     <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
     <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
@@ -10,100 +11,24 @@
 </head>
 <body>
 <main class="app-container">
-    <section class="section-block bio">
-        <header class="bio__header">
-            <div class="bio__header-img"></div>
-        </header>
-        <main class="bio__content">
-            <ul class="bio__content-details">
-                <li>Micah Chiang</li>
-                <li>Software Engineer</li>
-                <li>Born in Dallas</li>
-                <li>Raised in Hong Kong</li>
-                <li>Living in Los Angeles</li>
-                <li>Likes video games and Dyson vaccums</li>
-            </ul>
-        </main>
+    <section class="bio__img grid-item">
+        <div class="img"></div>
     </section>
-    <section class="section-block current__work">
-        <p class="current__work-title">Current Projects</p>
-        <article class="article-block">
-            <header class="rr__header-img"></header>
-            <main class="article-block-content">
-                <p>
-                    Role <br> Front-End Engineer
-                </p>
-                <p>
-                    Description <br> Helping over 100 million renters report their on-time rent payments to the credit bureaus and improve their credit score by adding a positive trade-line to their credit report.
-                </p>
-                <p>
-                    Responsibilities <br> Building the client-facing side of our company's proprietary customer authentication tools. Ensuring the integrity and resiliency of our applications by constructing our infrastructure of end to end tests.
-                </p>
-                <p>
-                    Technologies <br> Angular2, Typescript, Webpack, Protractor, Jasmine, HTML5, SCSS.
-                </p>
-                <p>
-                    <a class="project__link" target="_blank" href="https://signup.rentreporters.com">Check it out</a>
-                </p>
-            </main>
-        </article>
-        <article class="article-block">
-            <header class="desktoptoys__header-img"></header>
-            <main class="article-block-content">
-                <p>
-                    Role <br> Full-Stack Engineer
-                </p>
-                <p>
-                    Description <br> Ever have trouble figuring out how you want to personalize your workspace? Desktop Toys is a simple application that generates random things you can purchase to make your workspace your own.
-                </p>
-                <p>
-                    Responsibilities <br> Constructed both the client-facing and server side infrastructure of the application.
-                </p>
-                <p style="margin-top: 4.1em;">
-                    Technologies <br> ES6, HTML5, CSS3, NodeJS, ExpressJS, Amazon Product API.
-                </p>
-                <p>
-                    <a class="project__link" target="_blank" href="http://desktop.toys">Check it out</a>
-                </p>
-            </main>
-        </article>
-        <article class="article-block">
-            <header class="alduino__header">
-                <p>Frankie Alduino Photography</p>
-            </header>
-            <main class="article-block-content">
-                <p>
-                    Role <br> Full-Stack Engineer
-                </p>
-                <p>
-                    Description <br> Built for a New York City based portrait photographer. Photography portfolio that follows a single page application philosophy using some of the latest javascript technologies.
-                </p>
-                <p>
-                    Responsibilities <br> Constructed both the client-facing and server side infrastructure of the application.
-                </p>
-                <p style="margin-top: 4.1em;">
-                    Technologies <br> Angular2, Typescript, SCSS, NodeJS, ExpressJS, Heroku CLI.
-                </p>
-                <p>
-                    <a class="project__link" target="_blank" href="http://frankiealduino.com">Check it out</a>
-                </p>
-            </main>
-        </article>
+    <section class="bio__desc grid-item">
+        <p>Born in Dallas | Raised in Hong Kong | Living in Los Angeles | Likes video games and Dyson vacuums</p>
     </section>
-    <section class="section-block technologies">
-        <p class="technology__title">Currently Used Technologies</p>
-        <article class="technologies__container">
-            <div class="technology-block technology-one"></div>
-            <div class="technology-block technology-two"></div>
-            <div class="technology-block technology-three"></div>
-            <div class="technology-block technology-four"></div>
-            <div class="technology-block technology-five"></div>
-            <div class="technology-block technology-six"></div>
-            <div class="technology-block technology-seven"></div>
-            <div class="technology-block technology-eight"></div>
-        </article>
+    <section class="current__work grid-item"></section>
+    <section class="personal__projects grid-item"></section>
+    <section class="technologies grid-item">
+        <div class="tech-one"></div>
+        <div class="tech-two"></div>
+        <div class="tech-eight"></div>
+        <div class="tech-three"></div>
+        <div class="tech-seven"></div>
+        <div class="tech-four"></div>
+        <div class="tech-six"></div>
+        <div class="tech-five"></div>
     </section>
 </main>
 </body>
-<!-- <script type="text/javascript" src="index.js"></script> -->
 </html>

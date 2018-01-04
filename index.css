@@ -5,198 +5,119 @@
 }
 
 .app-container {
-    width: 100%;
-    background: #74ebd5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    font-family: helvetica;
+    min-height: 100vh;
+    height: 100vh;
+    background: #ffd89b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: grid;
+    grid-template-areas:
+        'bio__img'
+        'bio__desc'
+        'current__work'
+        'personal__projects'
+        'technologies';
+    font-family: Helvetica;
+    grid-gap: 5px;
     color: #ffffff;
 }
-.section-block {
+
+@media (min-width: 700px) {
+    .app-container {
+        grid-template-areas:
+            'bio__img bio__img bio__img'
+            'bio__img bio__img bio__img'
+            'bio__desc bio__desc bio__desc'
+            'technologies technologies technologies'
+            'current__work personal__projects personal__projects';
+    }
+}
+
+.bio__img {
+    grid-area: bio__img;
+    display: flex;
+    padding: 1em 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    background-image: url('assets/img/mc_biopic.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.bio__desc {
+    grid-area: bio__desc;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100%;
-}
-.article-block {
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    height: 75%;
-    width: 30%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-}
-.article-block-content {
-    line-height: 1.5em;
-}
-.project__link {
-    color: royalblue;
-    text-decoration: none;
-}
-.nav__down {
-    position: fixed;
-    bottom: 5px;
-    font-size: 5em;
-    cursor: pointer;
+    font-size: 24px;
 }
 
-.bio {
-    background: #74ebd5;
-    background: -webkit-linear-gradient(top left,#74ebd5,#9face6);
-    background: -moz-linear-gradient(top left,#74ebd5,#9face6);
-    background: linear-gradient(top left,#74ebd5,#9face6);
+.bio__desc p {
+    margin: 0;
 }
-.bio__header {
-
-}
-.bio__header-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background-image: url('./assets/img/mc_biopic.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-}
-.bio__header-title {
-
-}
-.bio__content {
-
-}
-.bio__content-details {
-    list-style: none;
-    line-height: 2em;
-    font-size: 1.5em;
-}
-
 
 .current__work {
-    position: relative;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background: #ff9d6c;
-    background: -webkit-linear-gradient(left,#ff9d6c,#bb4e75);
-    background: -moz-linear-gradient(left,#ff9d6c,#bb4e75);
-    background: linear-gradient(left,#ff9d6c,#bb4e75);
+    grid-area: current__work;
 }
-.current__work-title {
-    position: absolute;
-    top: 1em;
-    margin: 0;
-    font-size: 2em;
-    font-weight: 100;
-}
-.rr__header-img {
-    background-image: url('./assets/img/rentreporters_logo.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 20%;
-    width: 75%;
-}
-.desktoptoys__header-img {
-    background-image: url('./assets/img/DT-logo-responsive.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: rgba(250,250,250, 0.3);
-    height: 20%;
-    width: 75%;
-}
-.alduino__header {
-    font-family: Optima;
-    background-color: #000000;
-    color: #ffffff;
-    height: 20%;
-    width: 75%;
-    font-size: 2em;
-    text-align: center;
+
+.personal__projects {
+    grid-area: personal__projects;
 }
 
 .technologies {
-    position: relative;
-    flex-wrap: wrap;
-    background: #dd8d8d;
-    background: -webkit-linear-gradient(top left,#dd8d8d,#4a6c87);
-    background: -moz-linear-gradient(top left,#dd8d8d,#4a6c87);
-    background: linear-gradient(top left,#dd8d8d,#4a6c87);
-}
-.technology__title {
-    font-size: 2em;
-}
-.technologies__container {
+    grid-area: technologies;
     display: flex;
-    align-items: center;
-    width: 35%;
-    max-width: 400px;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
 }
-.technology-block {
-    width: 150px;
-    height: 150px;
-    border: 1px solid white;
-    border-radius: 5px;
+
+.technologies > div {
+    height: 100px;
+    width: 100px;
+    opacity: 0.7;
     background-size: contain;
-    background-position: center;
     background-repeat: no-repeat;
 }
 
-.technology-one {
+.tech-one {
     background-image: url('./assets/img/angular.png');
 }
-.technology-two {
+
+.tech-two {
     background-image: url('./assets/img/ts.png');
 }
-.technology-three {
+
+.tech-three {
     background-image: url('./assets/img/html.png');
 }
-.technology-four {
+
+.tech-four {
     background-image: url('./assets/img/css.png');
 }
-.technology-five {
+
+.tech-five {
     background-image: url('./assets/img/nodejs.png');
 }
-.technology-six {
+
+.tech-six {
     background-image: url('./assets/img/icon_mongodb_by_xkneo.png');
 }
-.technology-seven {
+
+.tech-seven {
     background-image: url('./assets/img/Ansible_Logo.png');
 }
-.technology-eight {
+
+.tech-eight {
     background-image: url('./assets/img/docker_vertical_large.png');
 }
-
-@media screen and (max-width: 1024px) and (orientation: portrait) {
-    .article-block {
-        border: 1px solid #ffffff;
-        border-radius: 5px;
-        height: 30%;
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 1em;
-        max-width: none !important;
-    }
-    .current__work {
-        flex-direction: column;
-        height: 135vh;
-    }
-    .desktoptoys__header-img {
-        margin-right: 40px;
-    }
-    .alduino__header {
-        margin-right: 40px;
-    }
+.grid-item {
+    /*background-color: rgba(101, 144, 154, 0.4);*/
 }
 
 
