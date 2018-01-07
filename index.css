@@ -6,31 +6,16 @@
 
 .app-container {
     min-height: 100vh;
-    height: 100vh;
-    background: #ffd89b;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
     display: grid;
     grid-template-areas:
         'bio__img'
         'bio__desc'
-        'current__work'
-        'personal__projects'
-        'technologies';
+        'current__work';
+    grid-template-rows: 2fr 2fr 2fr;
     font-family: Helvetica;
     grid-gap: 5px;
-    color: #ffffff;
-}
-
-@media (min-width: 700px) {
-    .app-container {
-        grid-template-areas:
-            'bio__img bio__img bio__img'
-            'bio__img bio__img bio__img'
-            'bio__desc bio__desc bio__desc'
-            'technologies technologies technologies'
-            'current__work personal__projects personal__projects';
-    }
+    color: #35586C;
 }
 
 .bio__img {
@@ -43,79 +28,91 @@
 
 .img {
     height: 100%;
-    width: 100%;
+    width: 80%;
     background-image: url('assets/img/mc_biopic.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position-x: right;
+    animation: loadOpacity 1.5s ease;
+}
+
+@keyframes loadOpacity {
+    from {opacity: 0}
+    to {opacity: 1}
 }
 
 .bio__desc {
     grid-area: bio__desc;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 24px;
+    justify-content: flex-start;
+    padding: 0 2em;
+    font-size: 1.5em;
 }
 
 .bio__desc p {
     margin: 0;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    animation: loadText 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes loadText {
+    from {opacity: 0; transform: translateX(-100px)}
+    to {opacity: 1; transform: translateX(0px)}
 }
 
 .current__work {
     grid-area: current__work;
-}
-
-.personal__projects {
-    grid-area: personal__projects;
-}
-
-.technologies {
-    grid-area: technologies;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    animation: loadSites 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.technologies > div {
-    height: 100px;
-    width: 100px;
-    opacity: 0.7;
+@keyframes loadSites {
+    from {opacity: 0; transform: translateY(200px)}
+    to {opacity: 1; transform: translateX(0px)}
+}
+
+.linkedin {
+    height: 15%;
+    width: 15%;
+    background-image: url('assets/img/linkedin.png');
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
-.tech-one {
-    background-image: url('./assets/img/angular.png');
+.github {
+    height: 15%;
+    width: 15%;
+    background-image: url('assets/img/github.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.tech-two {
-    background-image: url('./assets/img/ts.png');
+.insta {
+    height: 15%;
+    width: 15%;
+    background-image: url('assets/img/instasvg.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.tech-three {
-    background-image: url('./assets/img/html.png');
+.email {
+    height: 15%;
+    width: 15%;
+    background-image: url('assets/img/email.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.tech-four {
-    background-image: url('./assets/img/css.png');
-}
 
-.tech-five {
-    background-image: url('./assets/img/nodejs.png');
-}
-
-.tech-six {
-    background-image: url('./assets/img/icon_mongodb_by_xkneo.png');
-}
-
-.tech-seven {
-    background-image: url('./assets/img/Ansible_Logo.png');
-}
-
-.tech-eight {
-    background-image: url('./assets/img/docker_vertical_large.png');
-}
 .grid-item {
     /*background-color: rgba(101, 144, 154, 0.4);*/
 }
