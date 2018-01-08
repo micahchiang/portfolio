@@ -1,9 +1,4 @@
 
-@font-face {
-    font-family: Optima;
-    src: url('./assets/fonts/optima/optima.woff');
-}
-
 .app-container {
     min-height: 100vh;
     height: auto;
@@ -16,19 +11,20 @@
     font-family: Helvetica;
     grid-gap: 5px;
     color: #35586C;
+    overflow: hidden;
 }
 
 .bio__img {
     grid-area: bio__img;
     display: flex;
-    padding: 1em 0;
+    padding: 1em 2em;
     justify-content: center;
     align-items: center;
 }
 
 .img {
     height: 100%;
-    width: 80%;
+    width: 100%;
     background-image: url('assets/img/mc_biopic.jpg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -52,11 +48,12 @@
     align-items: center;
     justify-content: flex-start;
     padding: 0 2em;
-    font-size: 1.5em;
+    font-size: 16px;
 }
 
 .bio__desc-text {
     margin: 0;
+    font-size: 1.5em;
     line-height: 1.5em;
     letter-spacing: 1px;
     font-weight: 300;
@@ -133,6 +130,7 @@
 
     .img {
         background-position: center;
+        background-size: cover;
     }
 
     .social__links {
